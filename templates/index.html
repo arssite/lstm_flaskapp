@@ -3,57 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ARS LSTM NEXT WORD PREDICT</title>
+    <title>Document</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            margin: 0;
-            padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
+            margin: 0;
+            background-color: #3498db; /* Blue background color */
         }
         form {
             background-color: #fff;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            max-width: 400px;
-            width: 100%;
-        }
-        label {
-            font-weight: bold;
-            display: block;
-            margin-bottom: 10px;
         }
         input[type="text"] {
-            width: calc(100% - 20px);
+            width: 100%;
             padding: 10px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
         }
         button {
-            background-color: #007bff;
-            color: #fff;
+            background-color: #4CAF50; /* Green */
             border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 10px;
             cursor: pointer;
-            transition: background-color 0.3s ease;
         }
         button:hover {
-            background-color: #0056b3;
+            background-color: #45a049; /* Darker green */
         }
     </style>
 </head>
 <body>
     <form action="/process" method="post">
-        <label for="d1">Input text:</label>
-        <input id="d1" name="d1" type="text">
-        <button type="submit">Submit</button>
+        <label>Input text: </label>
+        <input name="d1" type="text">
+        <button>Submit</button>
     </form>
 </body>
 </html>
